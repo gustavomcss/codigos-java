@@ -16,7 +16,7 @@ public class Ex002 {
 		mes = (data % 10000) / 100;
 		ano = data % 100;
 		
-		System.out.println("\nDia: " + dia + "\nMês: " + mes + "\nAno: " + ano);
+		System.out.println("\nDia: " + dia + "\nMes: " + mes + "\nAno: " + ano);
 	}
 
 }

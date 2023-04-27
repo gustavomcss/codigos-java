@@ -19,7 +19,7 @@ public class Ex035 {
 			System.out.println("Altura Juca " + strJuca);			
 		}
 		
-		System.out.println("\nPara Juca ser maior que Chico, vão passar: " + anos + " anos.");
+		System.out.println("\nPara Juca ser maior que Chico, vao passar: " + anos + " anos.");
 	}
 
 }

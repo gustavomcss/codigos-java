@@ -6,7 +6,7 @@ public class Ex004 {
 		float media;
 		
 		media = (8 + 9 + 7) / 3;
-		System.out.println("A média aritmética de 8, 9 e 7 é: " + media);
+		System.out.println("A media aritmetica de 8, 9 e 7 eh: " + media);
 	}
 
 }

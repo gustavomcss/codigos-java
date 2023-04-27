@@ -20,7 +20,7 @@ public class Ex038 {
 		
 		System.out.println("");
 		for (i = 0; i < vetorA.length; i++) {
-			System.out.println("O dobro do vetor é: " + vetorB[i]);
+			System.out.println("O dobro do vetor eh: " + vetorB[i]);
 		}
 	}
 

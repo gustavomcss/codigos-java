@@ -7,7 +7,7 @@ public class Ex028 {
 	public static void main(String[] args) {
 		int num;
 		
-		System.out.print("Entre com um número entre 1 e 12 para descobrir o mês: ");
+		System.out.print("Entre com um numero entre 1 e 12 para descobrir o mes: ");
 		Scanner s1 = new Scanner(System.in);
 		num = s1.nextInt();
 		s1.close();
@@ -19,7 +19,7 @@ public class Ex028 {
 			System.out.println("Fevereiro");
 		}
 		else if (num == 3) {
-			System.out.println("Março");
+			System.out.println("Marco");
 		}
 		else if (num == 4) {
 			System.out.println("Abril");
@@ -49,7 +49,7 @@ public class Ex028 {
 			System.out.println("Dezembro");
 		}
 		else {
-			System.out.println("Não existe o mês com o número informado. ");
+			System.out.println("Nao existe o mes com o numero informado. ");
 		}
 		
 	}

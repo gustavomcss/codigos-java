@@ -7,7 +7,7 @@ public class Ex003 {
 		
 		produto = num1 * num2;
 		
-		System.out.println("O produto entre " + num1 + " e " + num2 + " é: " + produto);
+		System.out.println("O produto entre " + num1 + " e " + num2 + " eh: " + produto);
 	}
 
 }
