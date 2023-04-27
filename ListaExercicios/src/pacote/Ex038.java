@@ -16,7 +16,6 @@ public class Ex038 {
 			vetorA[i] = s1.nextInt();
 			vetorB[i] = vetorA[i] * vetorA[i];
 		}
-		s1.close();
 		
 		System.out.println("");
 		for (i = 0; i < vetorA.length; i++) {
