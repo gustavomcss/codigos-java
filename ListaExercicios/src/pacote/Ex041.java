@@ -19,10 +19,7 @@ public class Ex041 {
                 tamanhoSublista++;
             }
         }
-
-        if (tamanhoSublista == 1) {
-            tamanhoSublista = 0;
-        }
+        
         s1.close();
         
         System.out.println("A subslista tem " + tamanhoSublista + " itens em ordem.");
