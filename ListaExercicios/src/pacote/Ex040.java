@@ -40,5 +40,6 @@ public class Ex040 {
         for (int y = 0; y < 10; y++) {
             System.out.print("[" + V[y] + "] ");
         }
+        s1.close();
     }
 }

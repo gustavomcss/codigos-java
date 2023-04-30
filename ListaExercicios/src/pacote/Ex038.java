@@ -22,5 +22,4 @@ public class Ex038 {
 			System.out.println("O dobro do vetor eh: " + vetorB[i]);
 		}
 	}
-
 }
