@@ -20,6 +20,7 @@ public class Ex030 {
             System.out.print(" [" + num[i] + "] ");
         }
         System.out.println("\n");
-
+        s1.close();
+        
     }    
 }

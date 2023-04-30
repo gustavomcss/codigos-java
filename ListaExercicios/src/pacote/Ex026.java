@@ -7,6 +7,7 @@ public class Ex026 {
     public static void main(String[] args) {
         int maior = 0, menor = 100000, i;
         int[] a = new int[5];
+        
         try (Scanner s1 = new Scanner(System.in)) {
             for (i = 0; i < 5; i++){
                 System.out.print("Digite o " + i + "o numero: ");
