@@ -6,28 +6,39 @@ public class Ex051 {
     
     public static void main(String[] args) {
         Scanner s1 = new Scanner(System.in);
-        int num, aux;
-        System.out.print("Entre com um numero para verificar se eh capicua: ");
-        num = s1.nextInt();
+        int[] A = new int[3];
+        int i;
+
+        for (i = 0; i < 3; i++) {
+            System.out.print("Entre com o " + (i+1) + "o numero: ");
+            A[i] = s1.nextInt();
+        }  
         
-        aux = reverso(num);
-        
-        System.out.println("Num: " + num + " Aux: " + aux);
-        if (aux == num) {
-        	System.out.println("\nÉ capicua.");
-        } else {
-        	System.out.println("\nNao eh capicua.");
-        }
-    }
+        System.out.print("\nLista Ordenada Crescentemente: ");
+        for (i = 0; i < 3; i++) {
+            System.out.print("[" + ordenarNumeros(A)[i] + "] ");
+        }      
+        System.out.println("");
     
-    public static int reverso(int num) {
-    	int soma = 0, resto;
-    	while (num != 0) {
-    		resto = num % 10;
-    		soma = (soma * 10)  + resto;
-    		num = num / 10;
-    	}
-    	
-    	return soma;
+    }
+
+    public static int[] ordenarNumeros(int[] B) {
+
+        if (B[0] > B[1]) {
+            int temp = B[0];
+            B[0] = B[1];
+            B[1] = temp;
+        }
+        if (B[1] > B[2]) {
+            int temp = B[1];
+            B[1] = B[2];
+            B[2] = temp;
+            if (B[0] > B[1]) {
+                temp = B[0];
+                B[0] = B[1];
+                B[1] = temp;
+            }
+        }
+        return B;
     }
 }

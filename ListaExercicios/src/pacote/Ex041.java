@@ -46,6 +46,7 @@ public class Ex041 {
 		for (i = 0; i < lista.length; i++) {
 			System.out.print("[" + lista[i] + "] ");
 		}
+	
 		
 		System.out.println("\n\nA maior sublista tem: " + maiorSub + " elementos.");
 	}
