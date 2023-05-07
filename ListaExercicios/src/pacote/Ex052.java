@@ -13,7 +13,7 @@ public class Ex052 {
             System.out.print("Entre com o " + (i+1) + "o numero: ");
             A[i] = s1.nextInt();
         }  
-        
+                
         System.out.print("\nLista Ordenada Decrescentemente: ");
         for (i = 0; i < 3; i++) {
             System.out.print("[" + ordenarNumeros(A)[i] + "] ");
