@@ -25,7 +25,7 @@ public class Principal {
         numeroConta = s1.nextInt();
 
         ContaBancaria conta = new ContaBancaria(nomeTitular, numeroConta);
-        System.out.println("\nBem Vindo, " + nomeTitular + "! O numero da sua conta eh: " + numeroConta);
+        System.out.println("\nBem Vindo, " + conta.nome + "! O numero da sua conta eh: " + conta.numeroConta);
 
 
         do {

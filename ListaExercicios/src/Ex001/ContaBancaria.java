@@ -1,9 +1,9 @@
 package Ex001;
 
 public class ContaBancaria {
-    private String nome;
-    private int numeroConta;
-    private double saldo;
+    public String nome;
+    public int numeroConta;
+    public double saldo;
 
 
     public ContaBancaria(String nome, int numeroConta) {
