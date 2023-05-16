@@ -14,19 +14,20 @@ public class ContaBancaria {
 
     public void depositar(double valor) {
         saldo = saldo + valor;
-        System.out.println("Depósito Realizado!\n\nNovo Saldo: " + saldo);
+        System.out.println("\nDepósito Realizado!\nNovo Saldo: " + saldo);
     }
 
     public void sacar(double valor) {
         if (valor <= saldo) {
             saldo = saldo - valor;
-            System.out.println("Saque Realizado!\n\nNovo Saldo: " + saldo);
+            System.out.println("\nSaque Realizado!\nNovo Saldo: " + saldo);
         } else {
-            System.out.println("Saldo Insuficiente.");
+            System.out.println("\nSaldo Insuficiente.");
         }
     }
 
     public void verificarSaldo() {
+        System.out.println("\nConta: " + numeroConta + "  Titular: " + nome);
         System.out.println("Saldo Atual: " + saldo);
     }
 }
