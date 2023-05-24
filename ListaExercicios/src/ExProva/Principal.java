@@ -108,7 +108,7 @@ public class Principal {
                     biblioteca.exibirLivrosDisponiveis();
                     break;
                 case 4:
-                    exibirLivrosEmprestados(usuario);
+                    usuario.exibirLivrosEmprestados();
                     break;
                 case 0:
                     System.out.println("\n<-- Voltando ao MENU...\n");
@@ -198,23 +198,6 @@ public class Principal {
         usuario.devolverLivro(livro);
         biblioteca.getLivrosDisponiveis().add(livro);
         System.out.println("Livro devolvido com sucesso.");
-    }
-
-    private static void exibirLivrosEmprestados(Usuario usuario) {
-        List<Livro> livrosEmprestados = usuario.getLivrosEmprestados();
-        
-        if (livrosEmprestados.isEmpty()) {
-            System.out.println("Você não possui livros emprestados.\n");
-            return;
-        }
-
-        System.out.println("\n--- MEUS LIVROS EMPRESTADOS ---");
-        for (Livro livro : livrosEmprestados) {
-            System.out.println("Título: " + livro.getTitulo());
-            System.out.println("Autor: " + livro.getAutor());
-            System.out.println("Número de páginas: " + livro.getNumeroPaginas());
-            System.out.println();
-        }
     }
 
     private static Livro encontrarLivroDisponivel(Biblioteca biblioteca, String titulo) {

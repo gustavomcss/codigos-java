@@ -34,5 +34,18 @@ public class Usuario {
         livrosEmprestados.remove(livro);
     }
 
-    
+    public void exibirLivrosEmprestados() {
+        if (livrosEmprestados.isEmpty()) {
+            System.out.println("Você não possui livros emprestados.\n");
+            return;
+        }
+
+        System.out.println("\n--- MEUS LIVROS EMPRESTADOS ---");
+        for (Livro livro : livrosEmprestados) {
+            System.out.println("Título: " + livro.getTitulo());
+            System.out.println("Autor: " + livro.getAutor());
+            System.out.println("Número de páginas: " + livro.getNumeroPaginas());
+            System.out.println();
+        }
+    }
 }
