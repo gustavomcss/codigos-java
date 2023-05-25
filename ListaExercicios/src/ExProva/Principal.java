@@ -139,9 +139,10 @@ public class Principal {
         int numeroPagina;
         
         System.out.print("\nDigite o Título do Livro: ");
-        titulo = s1.next();
+        s1.nextLine();
+        titulo = s1.nextLine();
         System.out.print("Digite o Autor do Livro: ");
-        autor = s1.next();
+        autor = s1.nextLine();
         System.out.print("Digite o Numero de Paginas: ");
         numeroPagina = s1.nextInt();
 

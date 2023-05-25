@@ -39,6 +39,7 @@ public class Biblioteca {
                     System.out.println("- " + livro.getTitulo() + " (" + livro.getAutor() + ") ");
                 }
             }
+            System.out.println();
         }
     }
 
